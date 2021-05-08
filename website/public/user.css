@@ -1,0 +1,36 @@
+.siteBackground {
+    background-image: url("/img/temp.gif");
+}
+
+.siteMainHeaderTextColour {
+    color: #666699 !important;
+}
+
+.siteBlueText {
+    color: #0000CC;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0000CC;
+}
+
+.textStandardBlack {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.textStandardBlue {
+    font-size: 1.3em;
+    color: #0000CC;
+}
+
+.textFooterSubheading {
+    font-size: 1.1em;
+}
+
+.routePageMainText {
+    font-size: 1.3em;
+    font-weight: normal;
+}

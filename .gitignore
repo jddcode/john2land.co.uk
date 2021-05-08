@@ -1,0 +1,9 @@
+**/.DS_Store
+**/.env.yml
+**/.idea
+website/node_modules
+website/.expo
+website/.eslintcache
+website/yarn.lock
+website/build
+website/build/*
