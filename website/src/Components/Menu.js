@@ -98,6 +98,10 @@ class Menu extends Component {
 									<Link to="/sponsors" className="nav-link">Our Sponsors</Link>
 							    </li>
 
+								<li className="nav-item mb-2 mb-md-0 mr-5">
+									<Link to="/comments" className="nav-link">Comments</Link>
+							    </li>
+
 							</ul>
 						</div>
 					</div>

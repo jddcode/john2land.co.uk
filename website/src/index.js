@@ -9,6 +9,7 @@ import {
 import './Components/site.css'
 import ls from 'local-storage';
 import checkpoints from './Data/timeline.js'
+import comments from './Data/comments.js'
 
 import Page from './Components/Page'
 import Session from './Components/Session'
@@ -39,7 +40,8 @@ class Application extends Component {
     configuration() {
 
         var config = {
-            checkpoints: Yaml.load(checkpoints)
+            checkpoints: Yaml.load(checkpoints),
+            comments: Yaml.load(comments)
         }
 
         return config

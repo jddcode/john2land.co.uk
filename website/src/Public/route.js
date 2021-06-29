@@ -1,7 +1,4 @@
 import React, {Component} from 'react'
-import AppleLogin from 'react-apple-login'
-import GoogleLogin from 'react-google-login'
-import {Redirect} from "react-router-dom";
 
 export default class Index extends Component {
 
