@@ -162,6 +162,20 @@ class Application extends Component {
                             </Page>
                         </Session>
                     )}/>
+
+                    {/* Catch All */}
+                    <Route render={routeProps => (
+
+                        <Session state={this.state}>
+                            <Page
+                                state = {this.state}
+                                title = "John2Land.co.uk"
+                                pageSubCaption = "Nine days cycling for Cancer Research UK and CLIC"
+                            >
+                                <SiteRoot state={this.state} />
+                            </Page>
+                        </Session>
+                    )}/>
                 </Switch>
             </Router>
         )
