@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Switch,
     Route, Redirect
 } from "react-router-dom";
 import './Components/site.css'
 import ls from 'local-storage';
+import checkpoints from './Data/timeline.js'
 
 import Page from './Components/Page'
 import Session from './Components/Session'
@@ -15,6 +16,8 @@ import CycleRoute from './Public/route'
 import Support from './Public/support'
 import Sponsors from './Public/sponsors'
 import Equipment from './Public/equipment'
+import Comments from './Public/comments'
+import Yaml from "js-yaml";
 
 class Application extends Component {
 
@@ -34,7 +37,10 @@ class Application extends Component {
 
     configuration() {
 
-        var config = {}
+        var config = {
+            checkpoints: Yaml.load(checkpoints)
+        }
+
         return config
     }
 
@@ -137,6 +143,21 @@ class Application extends Component {
                                 pageSubCaption = "Nine days cycling for Cancer Research UK and CLIC"
                             >
                                 <Equipment state={this.state} />
+
+                            </Page>
+                        </Session>
+                    )}/>
+
+                    {/* Comments Page */}
+                    <Route exact path="/comments" render={routeProps => (
+
+                        <Session state={this.state}>
+                            <Page
+                                state={this.state}
+                                title = "John2Land.co.uk"
+                                pageSubCaption = "Nine days cycling for Cancer Research UK and CLIC"
+                            >
+                                <Comments state={this.state} />
 
                             </Page>
                         </Session>
