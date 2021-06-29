@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { render } from 'react-snapshot'
 import ReactDOM from 'react-dom';
 import {
     BrowserRouter as Router,
@@ -184,4 +185,4 @@ class Application extends Component {
 
 
 
-ReactDOM.render(<Application />, document.getElementById('root'))
+render(<Application />, document.getElementById('root'))
